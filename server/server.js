@@ -49,11 +49,7 @@ app.use(express.json())
 
  app.get("/posts/", async (req, res) => {
 
-  // const userArray = await Post.find({}); 
 
-  // console.log(userArray);
-
-  // res.json(userArray);
 });
 
 
