@@ -9,8 +9,8 @@ import { useParams } from "react-router-dom"
 const Home = () => {
 
   const [postArray, setPostArray] = useState(null)
-  // const [searchValue, setSearchValue] = useState(null)
 
+  // const [searchValue, setSearchValue] = useState(null)
   // const postSearch = useParams().postsId
 
     useEffect( () => {
@@ -36,7 +36,7 @@ const Home = () => {
 
     {/* conditional rendering the cards with teranry opperator because the GET function is async cannot send a null value to*/}
     { postArray ? < Card post={postArray} /> : null }
-
+    
    < Nav />
   </div>
   
