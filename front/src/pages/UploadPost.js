@@ -1,12 +1,13 @@
 import Nav from "../components/Nav";
-import "./UploadPost.scss";
 import { useState } from "react";
 
 const UploadPost = () => {
-  const [fristname, setFristName] = useState("");
+  const [firstname, setFristName] = useState("");
   const [lastname, setLastname] = useState("");
   const [imageUrl, setimageUrl] = useState("");
   const [portfolioUrl, setPortfolioUrl] = useState("");
+  const [creationDate, setCreationDate] = useState("")
+
 
   const handleFristName = (e) => {
     setFristName(e.target.value);
@@ -25,19 +26,29 @@ const UploadPost = () => {
   };
 
   const handlePostSubmit = (e) => {
-    e.preventDefault();
-    const post = [fristname, lastname, imageUrl, portfolioUrl];
-    console.log(post);
+   e.preventDefault()
+  
+  // setting the creation date of the post
+  let today = new Date()
+  setCreationDate(today)
 
-    const postAPost = () => {
-      fetch("http://localhost:8000/posts/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(post),
-      });
-    };
-    postAPost(post);
-  };
+  // uploading post to the mongoDB database
+  const post = {firstname, lastname, imageUrl, portfolioUrl, creationDate}
+  // const postJson = JSON.stringify(post)
+  console.log(post)
+
+  const POSTPost = () => {
+
+  fetch("http://localhost:8004/posts/", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(post)
+  })
+
+  }
+  POSTPost(post)
+  
+  }
 
   return (
     <div className="postContainer">

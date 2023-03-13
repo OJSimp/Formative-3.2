@@ -6,6 +6,8 @@ import Home from "./pages/Home"
 import Search from "./pages/Search"
 import UploadPost from "./pages/UploadPost"
 
+import EditPost from "./pages/EditPost"
+
 
 function App() {
   return (
@@ -14,6 +16,10 @@ function App() {
         <Route path='/' element={< Home/>}></Route>
         <Route path='/search' element={< Search/>}></Route>
         <Route path='/post' element={< UploadPost/>}></Route>
+
+        <Route path="/:postsId" element={ < Home />} />
+
+        {/* <Route path="/editpost/:postsId" element={ < EditPost />} /> */}
       </ Routes >
     </div>
   );
