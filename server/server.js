@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
+const cors = require('cors');
 
 //models
 const Post = require("./models/post")
@@ -8,6 +9,7 @@ const Post = require("./models/post")
 // create servers
 const app = express()
 app.use(express.json())
+app.use(cors());
 
 //middlewares
 
@@ -49,20 +51,31 @@ app.use(express.json())
 
  app.get("/posts/", async (req, res) => {
 
-  // const userArray = await Post.find({}); 
+  const viewposts = await Post.find({})
 
-  // console.log(userArray);
+  console.log(viewposts)
 
-  // res.json(userArray);
+  res.json(viewposts)
+
+
 });
-
-
- // Get: View post by location
-
 
  // Get: Get post by id
 
+ app.get("/posts/:postId", async (req, res) => {
 
+  const requestedpost = await Post.findById(req.params.postId)
+
+  console.log(requestedpost)
+
+  res.json(requestedpost)
+
+
+});
+
+
+
+ // Get: View post by location
 
 
 
