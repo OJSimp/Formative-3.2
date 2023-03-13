@@ -36,7 +36,7 @@ const UploadPost = () => {
 
     const POSTPost = () => {
 
-    fetch("http://localhost:8000/posts/", {
+    fetch("http://localhost:8004/posts/", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(post)
