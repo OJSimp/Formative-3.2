@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-import "./UploadPost.scss";
+
 import { useState } from "react";
 
 const UploadPost = () => {
@@ -7,6 +7,7 @@ const UploadPost = () => {
   const [lastname, setLastname] = useState("");
   const [imageUrl, setimageUrl] = useState("");
   const [portfolioUrl, setPortfolioUrl] = useState("");
+  const [creationDate, setCreationDate] = useState("");
 
   const handleFristName = (e) => {
     setFristName(e.target.value);
@@ -26,17 +27,23 @@ const UploadPost = () => {
 
   const handlePostSubmit = (e) => {
     e.preventDefault();
-    const post = [fristname, lastname, imageUrl, portfolioUrl];
+
+    // let today = new Date()
+    // setCreationDate(today)
+
+    const post = {fristname, lastname, imageUrl, portfolioUrl};
     console.log(post);
 
-    const postAPost = () => {
-      fetch("http://localhost:8000/posts/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(post),
-      });
-    };
-    postAPost(post);
+    const POSTPost = () => {
+
+    fetch("http://localhost:8000/posts/", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(post)
+    })
+
+    }
+    POSTPost(post)
   };
 
   return (
@@ -86,7 +93,7 @@ const UploadPost = () => {
               </div>
             </div>
 
-            <div className="input">
+            <div className="input-text">
               <label htmlFor="input-img_url">Image URL:</label>
               <input
                 type="text"
