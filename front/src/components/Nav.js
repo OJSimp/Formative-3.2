@@ -11,6 +11,8 @@ const Nav = () => {
     <li><Link to="/" className="nav-button">Feed <i className="nav-icon"></i></Link></li>
     <li><Link to="/search" className="nav-button">Search</Link></li>
     <li><Link to="/post" className="nav-button">Post</Link></li>
+
+    
    </ul>
   </nav>
   

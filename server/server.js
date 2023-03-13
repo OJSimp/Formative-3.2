@@ -40,9 +40,6 @@ app.use(cors());
 
 })
 
-
-
-
  // Put: Update post
 
 
@@ -69,7 +66,6 @@ app.use(cors());
   console.log(requestedpost)
 
   res.json(requestedpost)
-
 
 });
 
