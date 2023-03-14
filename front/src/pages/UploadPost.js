@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-
+import "./UploadPost.scss";
 import { useState } from "react";
 
 const UploadPost = () => {
@@ -31,19 +31,17 @@ const UploadPost = () => {
     // let today = new Date()
     // setCreationDate(today)
 
-    const post = {fristname, lastname, imageUrl, portfolioUrl};
+    const post = { fristname, lastname, imageUrl, portfolioUrl };
     console.log(post);
 
     const POSTPost = () => {
-
-    fetch("http://localhost:8004/posts/", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify(post)
-    })
-
-    }
-    POSTPost(post)
+      fetch("http://localhost:8004/posts/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(post),
+      });
+    };
+    POSTPost(post);
   };
 
   return (
