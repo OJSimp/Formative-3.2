@@ -1,3 +1,5 @@
+import "/Search.scss"
+
 import Nav from "../components/Nav"
 
 import { Link } from "react-router-dom"
@@ -12,10 +14,7 @@ const handleSearchInput = (e) => {
 e.preventDefault()
 
 console.log(searchValue)
-
 }
-
-
 
  const handleSearchValue = (e) => [
 
