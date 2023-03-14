@@ -1,4 +1,4 @@
-import "/Search.scss"
+import "./Search.scss"
 
 import Nav from "../components/Nav"
 
