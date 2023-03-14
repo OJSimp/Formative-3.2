@@ -1,3 +1,50 @@
+.card--page {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-bottom:10px;
+    height: 100%;
+}
 
+.card--widget {
+    display:flex;
+    flex-direction: column;
+    width: 364px;
+    height: 100%;
+    border: 3px solid black;
 
+    .card__image{
+        width: 100%;
+    }
 
+    .card--actions{
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        align-content: space-between;
+        width: 100%;
+        gap: 20px;
+
+        .card__artist h2{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 1rem;
+        }
+
+        ul{
+            // display: flex;
+            // flex-direction: row;
+            align-items: right;
+            // align-content: flex-end;
+
+            li {
+            list-style: none;
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 1rem;
+            }
+        }
+    }
+}

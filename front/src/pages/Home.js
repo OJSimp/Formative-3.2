@@ -1,4 +1,8 @@
+// import {useState} from "react";
+import Header from "../components/Header"
 import Nav from "../components/Nav"
+import Card from "../components/Card"
+
 
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
@@ -44,17 +48,18 @@ const Home = () => {
     }
     
   }, [])
- 
+
   
   
  return(
-  <div className="home-page">
-  { postArray ? < Card post={postArray} /> : null }
-   < Nav />
-  </div>
-  
-  )
 
+    <div className="home-page">
+      < Header />
+      < Card />
+      < Nav />
+    </div>
+
+  )
 }
 
 export default Home
