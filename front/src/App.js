@@ -18,6 +18,8 @@ function App() {
         <Route path='/' element={< Home/>}></Route>
         <Route path='/search' element={< Search/>}></Route>
         <Route path='/post' element={< UploadPost/>}></Route>
+
+        <Route path="/:postsId" element={ < Home />} />
       </ Routes >
     </div>
   );
