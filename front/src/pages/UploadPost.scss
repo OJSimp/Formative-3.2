@@ -1,50 +1,57 @@
 
+// Aimee has made edits to better align with figma doc. In most cases, I've left previous css in, but blanked out for reference
+
 // position for the upload post 
 .upload-post-page{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 340px; 
+  margin:0 auto;
   height: 100vh;
-  padding: 20px;
+  // padding: 20px;
   background-color: #F0F0F0;
 
   .form-create-post {
      display: flex;
      flex-direction: column;
-     width: 340px;
+     width: 320px;
      height: fit-content;
-     padding: 20px;
-     
+     padding: 15px;
+     margin-top:15px;
      background-color: #D8D8D8;
 
     h3{
-    padding-bottom: 20px;
+      padding-bottom: 2px;
+      text-transform: uppercase;
     // border-bottom: #F0F0F0 1px solid;
     }
   }
 }
 
 // input scss
+// Aimee has made edits to better align with figma doc
 
 .input-text{
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
   input{
-  padding: 12px;
+  height: 42px;
+  padding: 10px;
   margin-top: 5px;
   }
 }
 
 .image-preview{
   max-width: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
 }
 
 .submit-button{
-  display: flex;
-  justify-content: center;
+  width: 30%;
   padding: 10px;
   border-radius: 2px;
   background-color: #000000;
