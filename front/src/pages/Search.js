@@ -1,6 +1,8 @@
 import "./Search.scss";
 
-import Nav from "../components/Nav";
+import Header from "../components/Header";
+import Nav from "../components/Nav"
+// import Card from "../components/Card"
 
 import { Link } from "react-router-dom";
 

@@ -1,0 +1,21 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px; 
+    margin:0 auto;
+    height: 100vh;
+    // padding: 20px;
+    background-color: #F0F0F0;
+
+    .cards--container{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: auto;
+        padding:15px;
+        margin:15px;
+        background-color: #D8D8D8;
+    }
+
+}

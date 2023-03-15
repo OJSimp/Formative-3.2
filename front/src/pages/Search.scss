@@ -1,6 +1,4 @@
-.search-header{
- display: flex;
- padding: 20px;
+// Aimee has started this page off to keep the styles consistant throughout
 
 }
 
@@ -28,4 +26,33 @@ height: 330px;
 width: 771px;  
 }
 
+.search-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px; 
+    margin:0 auto;
+    height: 100vh;
+    // padding: 20px;
+    background-color: #F0F0F0;
 
+
+    .search-header {
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: fit-content;
+        padding: 20px;
+        background-color: #7C7C7C;
+    }
+
+    .search--display {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: auto;
+        padding:15px;
+        margin:15px;
+        background-color: #D8D8D8;
+    }
+}

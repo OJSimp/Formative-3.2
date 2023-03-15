@@ -1,9 +1,12 @@
-import Nav from "../components/Nav"
+import "./Home.scss"
+
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Card from "../components/Card"
 
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-import Card from "../components/Card"
 
 const Home = () => {
 
@@ -49,7 +52,10 @@ const Home = () => {
   
  return(
   <div className="home-page">
+    < Header />
+    <div className="cards--container">
   { postArray ? < Card post={postArray} /> : null }
+    </div>
    < Nav />
   </div>
   

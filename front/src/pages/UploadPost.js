@@ -1,13 +1,17 @@
+import Header from "../components/Header";
 import Nav from "../components/Nav";
 import "./UploadPost.scss";
 import { useState } from "react";
 
 const UploadPost = () => {
-  const [fristname, setFristName] = useState("");
+  const [firstname, setFristName] = useState("");
   const [lastname, setLastname] = useState("");
   const [imageUrl, setimageUrl] = useState("");
   const [portfolioUrl, setPortfolioUrl] = useState("");
-  const [creationDate, setCreationDate] = useState("");
+  const [creationDate, setCreationDate] = useState("")
+
+
+  // array construction for database
 
   const handleFristName = (e) => {
     setFristName(e.target.value);
@@ -22,35 +26,43 @@ const UploadPost = () => {
   };
 
   const handleImageUrl = (e) => {
+
     setimageUrl(e.target.value);
   };
+
+
+  // posting data to mongoDb
 
   const handlePostSubmit = (e) => {
     e.preventDefault();
 
-    // let today = new Date()
-    // setCreationDate(today)
+    let today = new Date()
+    setCreationDate(today)
 
-    const post = { fristname, lastname, imageUrl, portfolioUrl };
+    const post = { firstname, lastname, imageUrl, portfolioUrl, creationDate };
     console.log(post);
 
     const POSTPost = () => {
-      fetch("http://localhost:8004/posts/", {
+      fetch("http://localhost:8001/posts/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(post),
-      });
-    };
+      })
+    }
     POSTPost(post);
   };
 
   return (
-    <div className="postContainer">
+    // import header here
+    
+
+     
       <div className="upload-post-page">
+       < Header />
         <form className="form-create-post" onSubmit={handlePostSubmit}>
-          <div className="inputsAndButtonContainer">
-            <div className="input-text">
-              <label htmlFor="input-name_frist">Frist name:</label>
+          <h3>Create New</h3>
+          <div className="input-text">
+              {/* <label htmlFor="input-name_frist">First name:</label> */}
               <input
                 type="text"
                 placeholder="Frist name"
@@ -64,7 +76,7 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-name_last">Last name:</label>
+              {/* <label htmlFor="input-name_last">Last name:</label> */}
               <input
                 type="text"
                 placeholder="Last name"
@@ -78,7 +90,7 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-portfolio_url">Portfolio Url:</label>
+              {/* <label htmlFor="input-portfolio_url">Portfolio Url:</label> */}
               <input
                 type="text"
                 placeholder="Link to your portfolio"
@@ -92,10 +104,10 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-img_url">Image URL:</label>
+              {/* <label htmlFor="input-img_url">Image URL:</label> */}
               <input
                 type="text"
-                placeholder="Link to your image"
+                placeholder="Image URL"
                 className="input-img__url"
                 id="input-img__url"
                 onChange={handleImageUrl}
@@ -104,14 +116,11 @@ const UploadPost = () => {
                 <span></span>
               </div>
             </div>
-            <div className="buttonContainer">
-              <button className="submitButton">Submit:</button>
-            </div>
-          </div>
+              <img className="image-preview" src={imageUrl} alt="" />
+              <button className="submit-button">Update</button>
         </form>
         <Nav />
       </div>
-    </div>
   );
 };
 
