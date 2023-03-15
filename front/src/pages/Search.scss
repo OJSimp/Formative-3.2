@@ -1,5 +1,31 @@
 // Aimee has started this page off to keep the styles consistant throughout
 
+}
+
+.header-img{
+height: 383px;
+width: 770px;
+}
+
+.photo-container-middle{
+display: flex;
+justify-content: space-between;
+align-items: center;  
+gap: 10px;
+padding-bottom: 30px;
+width: 770px;
+}
+
+.middle-img{
+height: 236px;
+width: 378px;  
+}
+
+.bottom-img{
+height: 330px;
+width: 771px;  
+}
+
 .search-page{
     display: flex;
     flex-direction: column;
