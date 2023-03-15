@@ -31,27 +31,33 @@ const Search = () => {
             Search
           </Link>
         </form>
-        <div className="search-photos-grid">
-          <div className="photocontainertop">
-            <img
-              className="topimg"
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-              alt=""
-            ></img>
-          </div>
-          <div className="photocontainermiddle">
-            <img
-              className="middleimg"
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-              alt=""
-            ></img>
-            <img
-              className="middleimg"
-              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-              alt=""
-            ></img>
-            <div className="photocontainerbottom"></div>
-          </div>
+      </div>
+      <div className="search-photos-grid">
+        <div className="photo-container-header">
+          <img
+            className="header-img"
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            alt=""
+          ></img>
+        </div>
+        <div className="photo-container-middle">
+          <img
+            className="middle-img"
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            alt=""
+          ></img>
+          <img
+            className="middle-img"
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            alt=""
+          ></img>
+        </div>
+        <div className="photo-container-bottom">
+          <img
+            className="bottom-img"
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+            alt=""
+          ></img>
         </div>
       </div>
       <Nav />
