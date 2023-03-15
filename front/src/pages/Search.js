@@ -16,11 +16,11 @@ e.preventDefault()
 console.log(searchValue)
 }
 
- const handleSearchValue = (e) => [
+ const handleSearchValue = (e) => {
 
  setSearchValue(e.target.value)
 
-]
+ }
 
  return(
   <div className="search-page">
