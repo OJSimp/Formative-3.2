@@ -1,3 +1,4 @@
+import Header from "../components/Header";
 import Nav from "../components/Nav";
 import "./UploadPost.scss";
 import { useState } from "react";
@@ -53,13 +54,15 @@ const UploadPost = () => {
 
   return (
     // import header here
-
     
+
+     
       <div className="upload-post-page">
+       < Header />
         <form className="form-create-post" onSubmit={handlePostSubmit}>
           <h3>Create New</h3>
           <div className="input-text">
-              <label htmlFor="input-name_frist">Frist name:</label>
+              {/* <label htmlFor="input-name_frist">First name:</label> */}
               <input
                 type="text"
                 placeholder="Frist name"
@@ -73,7 +76,7 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-name_last">Last name:</label>
+              {/* <label htmlFor="input-name_last">Last name:</label> */}
               <input
                 type="text"
                 placeholder="Last name"
@@ -87,7 +90,7 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-portfolio_url">Portfolio Url:</label>
+              {/* <label htmlFor="input-portfolio_url">Portfolio Url:</label> */}
               <input
                 type="text"
                 placeholder="Link to your portfolio"
@@ -101,10 +104,10 @@ const UploadPost = () => {
             </div>
 
             <div className="input-text">
-              <label htmlFor="input-img_url">Image URL:</label>
+              {/* <label htmlFor="input-img_url">Image URL:</label> */}
               <input
                 type="text"
-                placeholder="Link to your image"
+                placeholder="Image URL"
                 className="input-img__url"
                 id="input-img__url"
                 onChange={handleImageUrl}
@@ -114,7 +117,7 @@ const UploadPost = () => {
               </div>
             </div>
               <img className="image-preview" src={imageUrl} alt="" />
-              <button className="submit-button">Upload</button>
+              <button className="submit-button">Update</button>
         </form>
         <Nav />
       </div>

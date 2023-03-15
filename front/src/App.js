@@ -9,7 +9,8 @@ import UploadPost from "./pages/UploadPost"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
+    {/* Should the 'App' className be using an uppercase 'A'? */}
       < Routes >
         <Route path='/' element={< Home/>}></Route>
         <Route path='/search' element={< Search/>}></Route>
