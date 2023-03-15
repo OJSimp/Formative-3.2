@@ -3,11 +3,11 @@ import "./UploadPost.scss";
 import { useState } from "react";
 
 const UploadPost = () => {
-  const [fristname, setFristName] = useState("");
+  const [firstname, setFristName] = useState("");
   const [lastname, setLastname] = useState("");
   const [imageUrl, setimageUrl] = useState("");
   const [portfolioUrl, setPortfolioUrl] = useState("");
-  const [creationDate, setCreationDate] = useState("");
+  const [creationDate, setCreationDate] = useState("")
 
   const handleFristName = (e) => {
     setFristName(e.target.value);
@@ -28,19 +28,19 @@ const UploadPost = () => {
   const handlePostSubmit = (e) => {
     e.preventDefault();
 
-    // let today = new Date()
-    // setCreationDate(today)
+    let today = new Date()
+    setCreationDate(today)
 
-    const post = { fristname, lastname, imageUrl, portfolioUrl };
+    const post = { firstname, lastname, imageUrl, portfolioUrl, creationDate };
     console.log(post);
 
     const POSTPost = () => {
-      fetch("http://localhost:8004/posts/", {
+      fetch("http://localhost:8001/posts/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(post),
-      });
-    };
+      })
+    }
     POSTPost(post);
   };
 
