@@ -1,16 +1,16 @@
 
 import "./Nav.scss"
 
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Nav = () => {
 
  return(
  <nav className="nav-menu">
    <ul>
-    <li><Link to="/" className="nav-button">Feed <i className="nav-icon"></i></Link></li>
-    <li><Link to="/search" className="nav-button">Search</Link></li>
-    <li><Link to="/post" className="nav-button">Post</Link></li>
+    <li><NavLink to="/" className="nav-button">Feed <i className="nav-icon"></i></NavLink></li>
+    <li><NavLink to="/search" className="nav-button">Search</NavLink></li>
+    <li><NavLink to="/post" className="nav-button">Post</NavLink></li>
 
     
    </ul>
