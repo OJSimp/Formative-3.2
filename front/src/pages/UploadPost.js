@@ -9,6 +9,9 @@ const UploadPost = () => {
   const [portfolioUrl, setPortfolioUrl] = useState("");
   const [creationDate, setCreationDate] = useState("")
 
+
+  // array construction for database
+
   const handleFristName = (e) => {
     setFristName(e.target.value);
   };
@@ -22,8 +25,12 @@ const UploadPost = () => {
   };
 
   const handleImageUrl = (e) => {
+
     setimageUrl(e.target.value);
   };
+
+
+  // posting data to mongoDb
 
   const handlePostSubmit = (e) => {
     e.preventDefault();
@@ -45,11 +52,13 @@ const UploadPost = () => {
   };
 
   return (
-    <div className="postContainer">
+    // import header here
+
+    
       <div className="upload-post-page">
         <form className="form-create-post" onSubmit={handlePostSubmit}>
-          <div className="inputsAndButtonContainer">
-            <div className="input-text">
+          <h3>Create New</h3>
+          <div className="input-text">
               <label htmlFor="input-name_frist">Frist name:</label>
               <input
                 type="text"
@@ -104,14 +113,11 @@ const UploadPost = () => {
                 <span></span>
               </div>
             </div>
-            <div className="buttonContainer">
-              <button className="submitButton">Submit:</button>
-            </div>
-          </div>
+              <img className="image-preview" src={imageUrl} alt="" />
+              <button className="submit-button">Upload</button>
         </form>
         <Nav />
       </div>
-    </div>
   );
 };
 
