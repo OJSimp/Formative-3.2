@@ -30,7 +30,7 @@ console.log(searchValue)
    < Header />
     <div className="search-header">
       <form action="" className="search-form" onSubmit={handleSearchInput}>
-        <input type="text" className="search-input" placeholder="search here for" onChange={handleSearchValue}/>
+        <input type="text" className="search-input" placeholder="Search here for" onChange={handleSearchValue}/>
         <Link to={`/${searchValue}`} className="primary-button">Search</Link>
       </form>
     </div> 

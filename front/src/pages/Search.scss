@@ -18,6 +18,31 @@
         height: fit-content;
         padding: 20px;
         background-color: #7C7C7C;
+
+
+    .search-form{
+        display: flex;
+        justify-content: space-between;
+    
+
+        .search-input{
+        border: 1px solid black;
+        padding: 10px;
+        width: 100%;
+        margin-right: 10px;
+        font-size: 14px;
+        }
+
+        .primary-button{
+        display: flex;
+        background-color: black;
+        color: #F0F0F0;
+        text-decoration: solid;
+        padding: 10px 16px;
+        border-radius: 2px;
+        
+        }
+     }
     }
 
     .search--display {
