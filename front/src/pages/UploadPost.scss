@@ -1,79 +1,119 @@
-.headertext{
-  font-size: 13px;  
-  }
-  
-  
-  .postContainer{
 
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
+// position for the upload post 
+.upload-post-page{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #F0F0F0;
+
+  .form-create-post {
+     display: flex;
+     flex-direction: column;
+     width: 340px;
+     height: fit-content;
+     padding: 20px;
+     
+     background-color: #D8D8D8;
+
+    h3{
+    padding: 10px 0px;
     }
+  }
+}
+
+// input scss
+
+.input-text{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+
+  input{
+  padding: 12px;
+  margin-top: 5px;
+  }
+}
+
+.image-preview{
+  max-width: fit-content;
+  padding-bottom: 10px;
+
+}
+
+.submit-button{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+// Zee's scss 
 
 
-    .labeltext{
-    font-size: 15px;  
-    }
+
+// .headertext{
+//   font-size: 13px;  
+//   }
+
+//     .labeltext{
+//     font-size: 15px;  
+//     }
   
 
-  .inputandbuttoncontainer{
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr; 
-   gap: 5px;
-  }
-  
+//   .input-name__frist{
+//    width: 335px; 
+//    border: 1px solid black;
+//   }
 
-  .input-name__frist{
-   width: 335px; 
-   border: 1px solid black;
-  }
+//   .input-name__last{
+//     width: 335px; 
+//    }
 
-  .input-name__last{
-    width: 335px; 
-   }
-
-  .portfolioimageinputs{
+//   .portfolioimageinputs{
  
-  display: grid;
-  grid-template-columns: rows;
-  gap: 4px;
-  }
+//   display: grid;
+//   grid-template-columns: rows;
+//   gap: 4px;
+//   }
   
-  .input-portfolio__url{
-  width: 100%;  
-  }
+//   .input-portfolio__url{
+//   width: 100%;  
+//   }
   
-  .input-img__url{
-    width: 100%; 
-  }
+//   .input-img__url{
+//     width: 100%; 
+//   }
   
 
 
 
   
-  .buttonContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//   .buttonContainer{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-  padding-left: 159px;
-  }
+//   padding-left: 159px;
+//   }
   
-  .ImageExample{
-   height: 230px;
-   width: 250px; 
-  }
+//   .ImageExample{
+//    height: 230px;
+//    width: 250px; 
+//   }
   
-  .primary-button{
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 2px;
-    height: 50px;
-    width: 90px;
+//   .primary-button{
+//     background-color: yellow;
+//     border: 2px solid black;
+//     border-radius: 2px;
+//     height: 50px;
+//     width: 90px;
     
-  }
+//   }
 
 
 
