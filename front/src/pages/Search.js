@@ -37,26 +37,26 @@ const Search = () => {
       <div className="search-photos-grid">
         <div className="photo-container-header">
           <img
-            className="header-img"
+            className="search-image"
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt=""
           ></img>
         </div>
         <div className="photo-container-middle">
           <img
-            className="middle-img"
+            className="search-image"
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt=""
           ></img>
           <img
-            className="middle-img"
+            className="search-image"
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt=""
           ></img>
         </div>
         <div className="photo-container-bottom">
           <img
-            className="bottom-img"
+            className="search-image"
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt=""
           ></img>
