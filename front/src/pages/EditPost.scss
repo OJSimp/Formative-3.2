@@ -1,0 +1,28 @@
+.edit-post-page{
+ background-color: #F0F0F0;
+
+ .edit-post {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 12px;
+   padding: 20px 12px;
+   background-color: #D8D8D8;
+   margin-bottom: 80px;
+ 
+   .text-input{
+   margin-bottom: 10px;
+   }
+
+   button{
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   align-self: flex-end;
+   max-width: 140px;
+   margin-top: 10px;
+   }
+  }
+}
+
+
+
