@@ -1,3 +1,5 @@
+import "./EditPost.scss"
+
 import Header from "../components/Header"
 import Nav from "../components/Nav"
 
@@ -65,35 +67,41 @@ const EditPost = () => {
     }
     
     return(
-        <div className="edit-post-page">
-            
-        < Header />
+       
+     <div className="edit-post-page">  
 
-        <form action="" onSubmit={handleEditPost}>
+        < Header />
+        <form className="edit-post" onSubmit={handleEditPost}>
+
+            <h3>Edit post</h3>
 
             {/* Reset first name */}
-            <input value={firstname} type="text" onChange={(e) => {
+            <input className="text-input" value={firstname} type="text" onChange={(e) => {
             setFirstName(e.target.value)
             console.log(firstname)
             }}/>
 
             {/* Reset last name */}
-            <input value={lastname} type="text" onChange={(e) => {
+            <input className="text-input" value={lastname} type="text" onChange={(e) => {
             setLastName(e.target.value)
             console.log(lastname)
             }}/>
 
             {/* Reset portoflio URL */}
-            <input value={portfolioUrl} type="text" onChange={(e) => {
+            <input className="text-input" value={portfolioUrl} type="text" onChange={(e) => {
             setPortfolioUrl(e.target.value)
             console.log(portfolioUrl)
             }}/>
 
             {/* Reset iamge URL */}
-            <input value={imageUrl} type="text" onChange={(e) => {
+            <input className="text-input" value={imageUrl} type="text" onChange={(e) => {
             setImageUrl(e.target.value)
             console.log(imageUrl)
             }}/>
+
+            {/* image preview */}
+
+            <img className="image-palcehodler" src={imageUrl} alt="" />
 
             <button>Edit Post</button>
 
@@ -101,7 +109,7 @@ const EditPost = () => {
            
 
         < Nav />
-        </div>
+    </div>
     )
 }
 
