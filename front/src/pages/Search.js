@@ -19,6 +19,7 @@ const Search = () => {
 
   const handleSearchValue = (e) => [setSearchValue(e.target.value)];
 
+
   return (
     <div className="search-page">
       <div className="search-header">

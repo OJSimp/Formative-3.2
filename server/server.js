@@ -42,9 +42,23 @@ app.use(cors());
 })
 
 
-
  // Put: Update post
 
+ app.put("/posts/:postId", async(req, res) => {
+
+  const upadatePost = await Post.findById(req.params.postId)
+
+  upadatePost.firstname = req.body.firstname
+  upadatePost.lastname = req.body.lastname
+  upadatePost.imageUrl = req.body.imageUrl
+  upadatePost.portfolioUrl = req.body.portfolioUrl
+
+  const updatedPost = await upadatePost.save()
+  res.json(updatedPost)
+
+  console.log("POST UPDATED", updatedPost)
+
+})
 
 
  // Get: View all posts 

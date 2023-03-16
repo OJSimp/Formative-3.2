@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 // import Card from "./components/Card"
 import Search from "./pages/Search"
 import UploadPost from "./pages/UploadPost"
+import EditPost from "./pages/EditPost"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={< Home/>}></Route>
         <Route path='/search' element={< Search/>}></Route>
         <Route path='/post' element={< UploadPost/>}></Route>
+        <Route path='/editpost/:postsId' element={< EditPost/>}></Route>
 
         <Route path="/:postsId" element={ < Home />} />
       </ Routes >

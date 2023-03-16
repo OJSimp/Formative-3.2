@@ -54,8 +54,6 @@ const UploadPost = () => {
 
   return (
     // import header here
-    
-
      
       <div className="upload-post-page">
        < Header />
