@@ -1,46 +1,52 @@
 // Aimee has started this page off to keep the styles consistant throughout
+.search--header{
 
-.search-from{
+}
+
+
+.search--from{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
 background-color: #7C7C7C;
+  padding: 20px;
+
+    .search--input {
+        width: 100%;
+        margin-top: 0px;
+        border: 1px solid black;
+        margin-right: 10px;
+    }
+
+    .primary--button{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+    padding: 10px 16px;
+    // width: 65px;
+    font-size: 14px;
+    text-decoration: none;  
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    }
 
 }
 
 
-.search-input{
-  border: 1px solid black;
-  height: 29px;
-  width: 236px;
-
-}
 
 
-.primary-button{
-display: flex;
-justify-content: center; 
-background-color: black;
-height: 26px;
-width: 65px;
-text-decoration: none;  
-border-radius: 2px;
-color: white;
-cursor: pointer;
-}
 
-.search-photos-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
-    width: 100%;
+.search-photos_grid {
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 10px;
     padding: 10px;
     margin-bottom: 80px;
+    background-color: #F0F0F0;
 
 
-    .photo-container-middle{
+    .photo-container--middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -49,6 +55,7 @@ cursor: pointer;
     .search-image {
      width: 100%;
      height: 100%;
+     object-fit: cover;
     }
 }
 
