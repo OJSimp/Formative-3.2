@@ -1,57 +1,80 @@
 // Aimee has started this page off to keep the styles consistant throughout
 
-.search-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 340px; 
-    margin:0 auto;
-    height: 100vh;
-    // padding: 20px;
-    background-color: #F0F0F0;
+
+.search-photos-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-bottom: 80px;
 
 
-    .search-header {
-        display: flex;
-        flex-direction: column;
-        width: 340px;
-        height: fit-content;
-        padding: 20px;
-        background-color: #7C7C7C;
-
-
-    .search-form{
-        display: flex;
-        justify-content: space-between;
-    
-
-        .search-input{
-        border: 1px solid black;
-        padding: 10px;
-        width: 100%;
-        margin-right: 10px;
-        font-size: 14px;
-        }
-
-        .primary-button{
-        display: flex;
-        background-color: black;
-        color: #F0F0F0;
-        text-decoration: solid;
-        padding: 10px 16px;
-        border-radius: 2px;
-        
-        }
-     }
+    .photo-container-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     }
 
-    .search--display {
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        height: auto;
-        padding:15px;
-        margin:15px;
-        background-color: #D8D8D8;
+    .search-image {
+     width: 100%;
+     height: 100%;
     }
 }
+
+
+// .header-img{
+// height: 383px;
+// width: 770px;
+// }
+
+// .photo-container-middle{
+// display: flex;
+// justify-content: space-between;
+// align-items: center;  
+// gap: 10px;
+// padding-bottom: 30px;
+// width: 770px;
+// }
+
+// .middle-img{
+// height: 236px;
+// width: 378px;  
+// }
+
+// .bottom-img{
+// height: 330px;
+// width: 771px;  
+// }
+
+// .search-page{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 340px; 
+//     margin:0 auto;
+//     height: 100vh;
+//     // padding: 20px;
+//     background-color: #F0F0F0;
+
+
+//     .search-header {
+//         display: flex;
+//         flex-direction: column;
+//         width: 340px;
+//         height: fit-content;
+//         padding: 20px;
+//         background-color: #7C7C7C;
+//     }
+
+//     .search--display {
+//         display: flex;
+//         flex-direction: column;
+//         width: 320px;
+//         height: auto;
+//         padding:15px;
+//         margin:15px;
+//         background-color: #D8D8D8;
+//     }
+// }
