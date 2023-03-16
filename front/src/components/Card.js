@@ -1,6 +1,8 @@
 import "./Card.scss"
 import "../App.scss"
 
+import { useNavigate } from "react-router-dom"
+
 const Card = (props) => {
 
     const postArray = props.post
@@ -18,7 +20,17 @@ const Card = (props) => {
      
      }
 
+     const navigate = useNavigate()
 
+     const handleEditPost = (e) => {
+
+      const postId = e.target.value
+
+      navigate(`/editpost/${postId}`)
+    
+    }
+
+     
 
 
     const cards = postArray.map((post, index) => {
@@ -35,7 +47,7 @@ const Card = (props) => {
               <a href={post.portfolioUrl}><h4>{post.firstname} {post.lastname}</h4></a>
           </div>{/* ARTIST btn ENDs */}
           <div className="cards__utility">
-              <button value={post._id} className="utility-button" >Edit</button>
+              <button value={post._id} className="utility-button" onClick={handleEditPost}>Edit</button>
               <button value={post._id} className="utility-button" onClick={handleDelete}>Delete</button>
           </div>{/* UTILITY btns END */}
         </div> {/* card FOOTER ENDS */}

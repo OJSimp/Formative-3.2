@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import "./UploadPost.scss";
 import { useState } from "react";
 
+import { useParams, useNavigate} from "react-router-dom"
+
 const UploadPost = () => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
@@ -33,6 +35,8 @@ const UploadPost = () => {
 
   // posting data to mongoDb
 
+  const navigate = useNavigate()
+
   const handlePostSubmit = (e) => {
     e.preventDefault();
 
@@ -50,6 +54,7 @@ const UploadPost = () => {
       })
     }
     POSTPost(post);
+    
   };
 
   return (
@@ -115,7 +120,7 @@ const UploadPost = () => {
               </div>
             </div>
               <img className="image-preview" src={imageUrl} alt="" />
-              <button className="submit-button">Update</button>
+              <button className="submit-button">Save</button>
         </form>
         <Nav />
       </div>
