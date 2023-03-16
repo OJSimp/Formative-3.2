@@ -1,5 +1,34 @@
 // Aimee has started this page off to keep the styles consistant throughout
 
+.search-from{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+background-color: #7C7C7C;
+
+}
+
+
+.search-input{
+  border: 1px solid black;
+  height: 29px;
+  width: 236px;
+
+}
+
+
+.primary-button{
+display: flex;
+justify-content: center; 
+background-color: black;
+height: 26px;
+width: 65px;
+text-decoration: none;  
+border-radius: 2px;
+color: white;
+cursor: pointer;
+}
 
 .search-photos-grid {
     display: grid;

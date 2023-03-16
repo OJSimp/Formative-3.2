@@ -1,7 +1,7 @@
 import "./Search.scss";
 
 import Header from "../components/Header";
-import Nav from "../components/Nav"
+import Nav from "../components/Nav";
 // import Card from "../components/Card"
 
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ const Search = () => {
           <input
             type="text"
             className="search-input"
-            placeholder="search here for"
+            placeholder="Search Here..."
             onChange={handleSearchValue}
           />
           <Link to={`/${searchValue}`} className="primary-button">
