@@ -5,7 +5,7 @@ import Nav from "../components/Nav"
 
 import { useEffect, useState } from "react"
 
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 
 const EditPost = () => {
     const [_id, setId ] = useState("")
@@ -43,7 +43,7 @@ const EditPost = () => {
     }, [])
 
    
-
+    const navigate = useNavigate()
 
     const handleEditPost = (e) => {
         
@@ -63,6 +63,8 @@ const EditPost = () => {
     }   
 
     PUTRequest(put)
+
+    navigate("/")
     
     }
     
@@ -103,7 +105,7 @@ const EditPost = () => {
 
             <img className="image-palcehodler" src={imageUrl} alt="" />
 
-            <button>Edit Post</button>
+            <button>Update</button>
 
         </form>
            
