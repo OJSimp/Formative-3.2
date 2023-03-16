@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require("fs");
 const mongoose = require('mongoose')
 require('dotenv').config()
 const cors = require('cors');
@@ -8,13 +9,14 @@ const Post = require("./models/post")
 
 // create servers
 const app = express()
+
+//middlewares
 app.use(express.json())
 app.use(cors());
 
-//middlewares
 
+//-----------Routes START-----------
 
-//routes
 
  // Post: Create a new post
 
@@ -30,15 +32,16 @@ app.use(cors());
 
 
  // Delete: Delete a post by ID
-
  app.delete("/posts/:postId", async(req, res) => {
 
   const deletePost = await Post.findByIdAndDelete(req.params.postId)
   res.json(deletePost)
 
-  console.log("POST DELETED", deletePost)
+  // console.log("POST DELETED", deletePost)
 
 })
+
+
 
  // Put: Update post
 
@@ -93,4 +96,3 @@ mongoose.connection.on('connected', () => {
 
 
 mongoose.connection.on('error', () => {console.log("error")})
-

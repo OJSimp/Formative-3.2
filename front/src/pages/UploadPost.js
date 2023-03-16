@@ -4,7 +4,7 @@ import "./UploadPost.scss";
 import { useState } from "react";
 
 const UploadPost = () => {
-  const [firstname, setFristName] = useState("");
+  const [firstname, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
   const [imageUrl, setimageUrl] = useState("");
   const [portfolioUrl, setPortfolioUrl] = useState("");
@@ -13,8 +13,8 @@ const UploadPost = () => {
 
   // array construction for database
 
-  const handleFristName = (e) => {
-    setFristName(e.target.value);
+  const handleFirstName = (e) => {
+    setFirstName(e.target.value);
   };
 
   const handleLastName = (e) => {
@@ -62,13 +62,13 @@ const UploadPost = () => {
         <form className="form-create-post" onSubmit={handlePostSubmit}>
           <h3>Create New</h3>
           <div className="input-text">
-              {/* <label htmlFor="input-name_frist">First name:</label> */}
+              {/* <label htmlFor="input-name_first">First name:</label> */}
               <input
                 type="text"
-                placeholder="Frist name"
-                className=" input-name__frist"
-                id="input-name__frist"
-                onChange={handleFristName}
+                placeholder="First name"
+                className=" input-name__first"
+                id="input-name__first"
+                onChange={handleFirstName}
               />
               <div className="input-error-message">
                 <span></span>

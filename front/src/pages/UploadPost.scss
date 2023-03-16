@@ -24,40 +24,27 @@
     h3{
       padding-bottom: 2px;
       text-transform: uppercase;
-    // border-bottom: #F0F0F0 1px solid;
     }
   }
 }
 
-// input scss
+// INPUT CSS
 // Aimee has made edits to better align with figma doc
 
 .input-text{
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
-
-  input{
-  height: 42px;
-  padding: 10px;
-  margin-top: 5px;
-  }
 }
 
 .image-preview{
   max-width: fit-content;
   padding-bottom: 5px;
-
 }
 
 .submit-button{
-  width: 30%;
-  padding: 10px;
-  border-radius: 2px;
-  background-color: #000000;
-  color: white;
-  font-weight: bold;
-  border: none;
+  width: 40%;
+  align-self: flex-end;
 }
 
 // Zee's scss 
