@@ -14,7 +14,7 @@ const Card = (props) => {
       const cardIDToDelete = e.target.value
       const cardToDelete = e.target.parentElement.parentElement.parentElement.style.display = "none"
       
-      fetch(`http://localhost:8000/posts/${cardIDToDelete}`, {method: "DELETE"})
+      fetch(`http://localhost:8001/posts/${cardIDToDelete}`, {method: "DELETE"})
       
       console.log(cardToDelete)
      
