@@ -54,6 +54,8 @@ const UploadPost = () => {
       })
     }
     POSTPost(post);
+
+    navigate("/")
     
   };
 
