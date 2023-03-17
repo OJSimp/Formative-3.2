@@ -22,6 +22,7 @@ const Search = () => {
 
   return (
     <div className="search-page">
+         < Header />
       <div className="search--header">
         <form action="" className="search--from" onSubmit={handleSearchInput}>
           <input
