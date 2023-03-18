@@ -1,7 +1,5 @@
+// Check css mark up from Edit Post Page – should be simular 
 
-// Aimee has made edits to better align with figma doc. In most cases, I've left previous css in, but blanked out for reference
-
-// position for the upload post 
 .upload-post-page{
   display: flex;
   flex-direction: column;
@@ -9,7 +7,6 @@
   width: 340px; 
   margin:0 auto;
   height: 100vh;
-  // padding: 20px;
   background-color: #F0F0F0;
 
   .form-create-post {
@@ -29,86 +26,20 @@
 }
 
 // INPUT CSS
-// Aimee has made edits to better align with figma doc
 
-.input-text{
+.input-text {
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
 }
 
-.image-preview{
+.image-preview {
   max-width: fit-content;
   padding-bottom: 5px;
 }
 
-.submit-button{
+.submit-button {
   width: 40%;
   align-self: flex-end;
 }
-
-// Zee's scss 
-
-
-
-// .headertext{
-//   font-size: 13px;  
-//   }
-
-//     .labeltext{
-//     font-size: 15px;  
-//     }
-  
-
-//   .input-name__frist{
-//    width: 335px; 
-//    border: 1px solid black;
-//   }
-
-//   .input-name__last{
-//     width: 335px; 
-//    }
-
-//   .portfolioimageinputs{
- 
-//   display: grid;
-//   grid-template-columns: rows;
-//   gap: 4px;
-//   }
-  
-//   .input-portfolio__url{
-//   width: 100%;  
-//   }
-  
-//   .input-img__url{
-//     width: 100%; 
-//   }
-  
-
-
-
-  
-//   .buttonContainer{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//   padding-left: 159px;
-//   }
-  
-//   .ImageExample{
-//    height: 230px;
-//    width: 250px; 
-//   }
-  
-//   .primary-button{
-//     background-color: yellow;
-//     border: 2px solid black;
-//     border-radius: 2px;
-//     height: 50px;
-//     width: 90px;
-    
-//   }
-
-
 
